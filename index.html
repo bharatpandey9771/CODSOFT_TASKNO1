@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        color: #263238;
+        line-height: 1.6;
+        background: #f4f7fb;
+      }
+
+      header {
+        background: #172554;
+        color: white;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #93c5fd;
+      }
+
+      section {
+        padding: 65px 8%;
+      }
+
+      .hero {
+        min-height: 430px;
+        background: linear-gradient(120deg, #dbeafe, #eff6ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 42px;
+        color: #172554;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 19px;
+        margin-bottom: 24px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+
+      .section-title {
+        text-align: center;
+        color: #172554;
+        font-size: 30px;
+        margin-bottom: 28px;
+      }
+
+      .about-image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 25%;
+      }
+
+      .about-content {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+      }
+
+      .skills {
+        background: #eaf1fc;
+      }
+
+      .skill-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .skill {
+        background: white;
+        border-radius: 8px;
+        padding: 15px 24px;
+        min-width: 130px;
+        text-align: center;
+        font-weight: bold;
+        box-shadow: 0 3px 12px #00000012;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 22px;
+      }
+
+      .project-card {
+        background: white;
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: 0 3px 14px #00000012;
+      }
+
+      .project-card h3 {
+        color: #1d4ed8;
+        margin-bottom: 10px;
+      }
+
+      .resume {
+        background: #eaf1fc;
+        text-align: center;
+      }
+
+      .contact {
+        text-align: center;
+      }
+
+      .contact p {
+        margin: 8px;
+      }
+
+      footer {
+        background: #172554;
+        color: white;
+        text-align: center;
+        padding: 22px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          justify-content: center;
+          text-align: center;
+        }
+
+        nav {
+          justify-content: center;
+          gap: 12px;
+        }
+
+        .hero h2 {
+          font-size: 32px;
+        }
+
+        section {
+          padding: 45px 6%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="hero" id="home">
+      <div>
+        <h2>Hey</h2>
+        <h2>I'm Bharat Pandey</h2>
+        <p>Aspiring Web Developer | Student | Creative Thinker</p>
+        <a class="btn" href="#about">Know More</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/picture.jpg" alt="My Profile Photo" />
+        </div>
+        <p>
+          Hello, My name is Bharat Pandey. I am a student interested in web
+          development and modern technologies. I enjoy creating websites using
+          HTML, CSS and JavaScript. I am passionate about learning new skills
+          and building useful projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skill-list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express.js</div>
+        <div class="skill">Mongodb</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Problem Solving</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>
+            A personal website created using HTML, CSS and JavaScript to
+            showcase my skills, education and projects.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Landing Page</h3>
+          <p>
+            A responsive landing page designed with attractive layouts, colors
+            and navigation.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Calculator</h3>
+          <p>
+            A basic calculator built using HTML, CSS and JavaScript to perform
+            arithmetic operations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+      <h2 class="section-title">My Resume</h2>
+      <p>
+        Download my resume to learn more about my education, skills and
+        experience.
+      </p>
+      <a class="btn" href="resume/Resume.png" download> Download Resume </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Email: bharat023ai0029@rdec.in</p>
+      <p>Phone: +91 7707080016</p>
+      <p>Location: Ghaziabad, India</p>
+      <a class="btn" href="mailto:bharat023ai0029@rdec.in"> Send Email </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Bharat Pandey. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
